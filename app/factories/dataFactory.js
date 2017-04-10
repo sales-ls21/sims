@@ -35,6 +35,18 @@ app.factory("dataFactory", function($http, FBInfo){
 		});
 	};
 
+	let addProduct = (item)=>{
+		return new Promise ((resolve, reject)=>{
+			$http.post(`${FBInfo.databaseURL}/inventory.json`, angular.toJson(item))
+			.then((obj)=>{
+				console.log(obj);
+				resolve(obj);
+			}).catch((error)=>{
+				reject(error);
+			});
+		});
+	};
+
 	let updateUser = (userObj, name)=>{
 		return new Promise((resolve, reject)=>{
 			$http.get(`${FBInfo.databaseURL}/users.json?orderBy="employeeId"&equalTo="${name}"`)
@@ -52,7 +64,7 @@ app.factory("dataFactory", function($http, FBInfo){
 		});	
 	};
 
-	return{getByDepartment, getUsers, getUserById, updateUser};
+	return{addProduct, getByDepartment, getUsers, getUserById, updateUser};
 
 });
 

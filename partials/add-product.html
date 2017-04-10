@@ -1,0 +1,65 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SIMS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="/dashboard">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="/users">Users</a></li>
+            <li class="active"><a href="/add-new-product">Add a New Product</a></li>
+            <li><a ng-click="logout()">Log Out</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+          <h1 class="page-header">Admin Dashboard</h1>
+          <h4>Enter product details below. Please ensure that you click the "Save" button in order to store the item. </h4>
+          <form>
+			  <div class="form-group">
+			  	<label for="SKU">Product SKU</label>
+			    <input type="text" class="form-control" id="emailaddress" placeholder="Product SKU" ng-model="product.SKU" autofocus>
+			
+			    <label for="brand">Product Brand</label>
+          <input type="text" class="form-control" id="emailaddress" placeholder="Brand" ng-model="product.brand">
+
+          <label for="department">Product Department</label>
+          <input type="text" class="form-control" id="department" placeholder="Department" ng-model="product.department">
+          <label for="department">Product Category</label>
+			    <input type="text" class="form-control" id="category" placeholder="Category" ng-model="product.category">
+			 
+			 	 <label for="type">Product Type</label>
+			    <input type="text" class="form-control" id="type" placeholder="Type i.e. Chair, Couch" ng-model="product.type">
+			 
+			 	 <label for="price">Product Price</label>
+			    <input type="text" class="form-control" id="price" placeholder="Price" ng-model="product.price">
+			
+			 	 <label for="quantity">Quantity</label>
+          <input type="text" class="form-control" id="quantity" placeholder="Quantity" ng-model="product.quantity">
+         <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" placeholder="Quantity" ng-model="product.location">
+         <label for="description">Description</label>
+			   <input type="text" class="form-control" id="description" placeholder="Description" ng-model="product.description">
+			   </div>
+			 	<button class="btn btn-info" ng-click="save()"> Save </button>
+			</form>

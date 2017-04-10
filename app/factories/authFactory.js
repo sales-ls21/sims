@@ -18,11 +18,9 @@ app.factory("authFactory", function($http, FBInfo) {
 		return new Promise((resolve, reject) =>{
 			firebase.auth().onAuthStateChanged((user)=>{
 				if (user){
-					console.log("who is it?", user.uid);
 					currentUser = user.uid;
-					resolve(true);
+					resolve(currentUser);
 				} else{
-					console.log("not logged in");
 					resolve(false);
 				}
 			});
