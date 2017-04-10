@@ -52,8 +52,6 @@ app.factory("dataFactory", function($http, FBInfo){
 		});	
 	};
 
-
-
 	return{getByDepartment, getUsers, getUserById, updateUser};
 
 });

@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller("userDisplayCtrl", function($scope, $location, dataFactory){
+app.controller("userDisplayCtrl", function(authFactory, $scope, $location, dataFactory){
 
 	$scope.users = [];
 	$scope.categories = [];
@@ -11,4 +11,9 @@ app.controller("userDisplayCtrl", function($scope, $location, dataFactory){
 		$scope.$apply();
 	});
 	
+	$scope.logout=()=>{
+		authFactory.logoutUser();
+		$location.url("/");
+		$scope.$apply();
+	};
 });

@@ -9,7 +9,8 @@ app.controller("registerCtrl", function($scope, $location, authFactory){
 		password: "",
 		department: "",
 		employeeId: "",
-		admin: false
+		admin: false,
+		date_created: new Date().toISOString()
 	};
 
 	$scope.register= ()=>{

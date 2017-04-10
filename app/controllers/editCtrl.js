@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller("editCtrl", function($routeParams, $location, $scope, dataFactory){
+app.controller("editCtrl", function(authFactory, $routeParams, $location, $scope, dataFactory){
 
 	$scope.name = $routeParams.employeeId;
 	$scope.users = [];
@@ -28,5 +28,9 @@ app.controller("editCtrl", function($routeParams, $location, $scope, dataFactory
 		});
 	};
 
-	
+	$scope.logout=()=>{
+		authFactory.logoutUser();
+		$location.url("/");
+		$scope.$apply();
+	};
 });
