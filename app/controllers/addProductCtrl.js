@@ -23,11 +23,6 @@ app.controller("addProductCtrl", function(authFactory, $scope, $location, dataFa
 		date_created: new Date().toISOString(),
 	};
 
-	$scope.logout = ()=>{
-		authFactory.logoutUser();
-		$location.url("/");
-	};
-
 	$scope.save = ()=>{
 		$scope.product.created_by = $scope.currentUser;
 		dataFactory.addProduct($scope.product)

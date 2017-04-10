@@ -1,67 +1,37 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">SIMS</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
+<div ng-include=" 'partials/navbar.html' "></div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+      <h1 class="page-header">Admin Dashboard</h1>
+      <h2 class="sub-header">SIMS Registered Users List</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>EMPLOYEE ID</th>
+              <th>NAME</th>
+              <th>DEPARTMENT</th>
+              <th>EMAIL</th>
+              <th>ADMIN STATUS</th>
+              <th>DATE CREATED</th>
+              <th>EDIT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="user in users">
+              <td>{{user.employeeId}}</td>
+              <td>{{user.name}}</td>
+              <td>{{user.department}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.admin}}</td>
+              <td>{{user.date_created}}</td>
+              <td><a class="btn btn-info" href="/edit-user/{{user.employeeId}}">Edit</a></td>
+            </tr>       
+          </tbody>
+        </table>
       </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="/dashboard">Overview <span class="sr-only">(current)</span></a></li>
-            <li class="active"><a href="/users">Users</a></li>
-            <li><a href="/add-new-product">Add a New Product</a></li>
-            <li><a ng-click="logout()">Log Out</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
-          <h1 class="page-header">Admin Dashboard</h1>
-          
-
-           <h2 class="sub-header">SIMS Registered Users List</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>EMPLOYEE ID</th>
-                  <th>NAME</th>
-                  <th>DEPARTMENT</th>
-                  <th>EMAIL</th>
-                  <th>ADMIN STATUS</th>
-                  <th>DATE CREATED</th>
-                  <th>EDIT</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr ng-repeat="user in users">
-                  <td>{{user.employeeId}}</td>
-                  <td>{{user.name}}</td>
-                  <td>{{user.department}}</td>
-                  <td>{{user.email}}</td>
-                  <td>{{user.admin}}</td>
-                  <td>{{user.date_created}}</td>
-                  <td><a class="btn btn-info" href="/edit-user/{{user.employeeId}}">Edit</a></td>
-                </tr>       
-              </tbody>
-            </table>
-          </div>
-        </div>
+    </div>
+  </div>
+</div>

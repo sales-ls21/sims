@@ -11,9 +11,4 @@ app.controller("userDisplayCtrl", function(authFactory, $scope, $location, dataF
 		$scope.$apply();
 	});
 	
-	$scope.logout=()=>{
-		authFactory.logoutUser();
-		$location.url("/");
-		$scope.$apply();
-	};
 });

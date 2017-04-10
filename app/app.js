@@ -41,7 +41,7 @@ app.config(function($routeProvider){
 		templateUrl: "partials/product-detail.html",
 		controller: "productDetailCtrl"
 	})
-	.when("/:category", {
+	.when("/view/:category", {
 		templateUrl: "partials/category-detail.html",
 		controller: "categoryDetailCtrl"
 	})

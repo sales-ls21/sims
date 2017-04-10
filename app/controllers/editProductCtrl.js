@@ -40,9 +40,4 @@ app.controller("editProductCtrl", function($scope, $location, $routeParams, data
 		
 	};
 
-	$scope.logout = ()=>{
-		authFactory.logoutUser();
-		$location.url("/");
-	};
-
 });

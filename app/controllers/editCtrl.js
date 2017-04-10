@@ -29,9 +29,4 @@ app.controller("editCtrl", function(authFactory, $routeParams, $location, $scope
 		});
 	};
 
-	$scope.logout=()=>{
-		authFactory.logoutUser();
-		$location.url("/");
-		$scope.$apply();
-	};
 });

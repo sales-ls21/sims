@@ -14,10 +14,6 @@ app.controller("dashboardCtrl", function($scope, $location, dataFactory, authFac
     });
 	});
 
-	$scope.logout=()=>{
-		authFactory.logoutUser();
-		$location.url("/");
-	};
 
 	$scope.categories = [];
 	$scope.finalCategories = [];
@@ -32,10 +28,7 @@ app.controller("dashboardCtrl", function($scope, $location, dataFactory, authFac
 				$scope.allitems.push(key);
 				$scope.$apply();
 			});	
-			$scope.categories.forEach(function(v){
-					$scope.finalCategories.push(v.toUpperCase());
-					$scope.$apply();
-				});		
+				
 	});
 
 

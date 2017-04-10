@@ -1,0 +1,42 @@
+{
+	"users": [
+		{
+			"name": "Mariel Castillo Cruz",
+			"email": "mcruz@power.com",
+			"department": "Marketing",
+			"admin": false,
+			"employeeId": "327",
+			"date_created": "2017-04-10 14:29 CDT"
+		},{
+			"name": "Jean-Michel Castille Croix",
+			"email": "jmichelcroix@power.com",
+			"department": "R&D",
+			"admin": false,
+			"employeeId": "723",
+			"date_created": "2017-04-10 14:29 CDT"
+		},{
+			"name": "Johann Michael Schloss Kreuz",
+			"email": "jo-michael@power.com",
+			"department": "Operations",
+			"admin": false,
+			"employeeId": "237",
+			"date_created": "2017-04-10 14:29 CDT"
+		},{
+			"name": "Joana Castelo Cruz",
+			"email": "jcastelocruz@power.com",
+			"department": "Sales",
+			"admin": false,
+			"employeeId": "273",
+			"date_created": "2017-04-10 14:29 CDT"
+		},{
+			"name": "Guiliano Castello Cruce",
+			"email": "gcruce@power.com",
+			"department": "Production",
+			"admin": false,
+			"employeeId": "732",
+			"date_created": "2017-04-10 14:29 CDT"
+		}
+
+	]
+
+}

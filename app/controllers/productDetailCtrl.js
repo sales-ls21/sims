@@ -10,9 +10,4 @@ app.controller("productDetailCtrl", function($scope, $location, $routeParams, da
 		$scope.$apply();
 	});
 
-	$scope.logout = ()=>{
-		authFactory.logoutUser();
-		$location.url("/");
-	};
-
 });
