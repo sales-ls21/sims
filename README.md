@@ -1,4 +1,4 @@
-# Stock and Inventory Management System
+# Simple Inventory Management System
 
 ### Background
 I started this project as a simple side interest, basically wanting to know whether I could, using a NoSQL database (Firebase), create a simple inventory management system for a local furniture and hardware store. The design is minimal, given the utilitarian nature of the app, but also instinctual.
