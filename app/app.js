@@ -29,6 +29,26 @@ app.config(function($routeProvider){
 		templateUrl: "partials/admin-home.html",
 		controller: "dashboardCtrl"
 	})
+	.when("/users",{
+		templateUrl: "partials/user-display.html",
+		controller: "userDisplayCtrl"
+	})
+	.when("/add-new-product", {
+		templateUrl: "partials/add-product.html",
+		controller: "addProductCtrl"
+	})
+	.when("/:SKU", {
+		templateUrl: "partials/product-detail.html",
+		controller: "productDetailCtrl"
+	})
+	.when("/:category", {
+		templateUrl: "partials/category-detail.html",
+		controller: "categoryDetailCtrl"
+	})
+	.when("/edit-user/:employeeId", {
+		templateUrl: "partials/edit-user.html",
+		controller: "editCtrl"
+	})
 	.otherwise("/");
 
 }).config(function($locationProvider){
@@ -38,7 +58,8 @@ app.config(function($routeProvider){
 app.run( ($location, FBInfo)=>{
 	let authConfig = {
 		apiKey: FBInfo.apiKey,
-		authDomain: FBInfo.authDomain
+		authDomain: FBInfo.authDomain,
+		databaseURL: FBInfo.databaseURL
 	};
 	firebase.initializeApp(authConfig);
 });

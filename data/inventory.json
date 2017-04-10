@@ -1,0 +1,210 @@
+{
+   "inventory":[
+      {
+      "department": "furniture",
+      "category": "living room",
+      "type": "recliner",
+      "brand": "Serta",
+      "price": "$304",
+      "style": "contemporary",
+      "quantity": 2,
+      "SKU": "CR-46357",
+      "location": "aisle 1",
+      "description": "Big and Tall Memory Foam Recliner, Multiple Colors"
+
+      },{
+         "department": "furniture",
+         "category": "living room",
+         "type": "recliner",
+         "brand": "ProLounger",
+         "price": "$199",
+         "quantity": 2,
+         "SKU": "CR-43793",
+         "location": "aisle 1",
+         "description": "Wall Hugger Microfiber Biscuit Back Recliner Chair, Multiple Colors"
+
+      },{
+         "department": "furniture",
+         "category": "living room",
+         "type": "recliner",
+         "brand": "Oakwood",
+         "price": "$208",
+         "quantity": 3,
+         "SKU": "CR-80395",
+         "location": "aisle 1",
+         "description": "Biscuit Back Leather Recliner"
+
+      },{
+         "department": "furniture",
+         "category": "living room",
+         "type": "recliner",
+         "brand": "Dorel",
+         "price": "$159.99",
+         "quantity": 4,
+         "SKU": "CR-93857",
+         "location": "aisle 1",
+         "description": "Living Slim Microfiber Recliner, Beige"
+
+      },{
+         "department": "furniture",
+         "category": "living room",
+         "type": "recliner",
+         "brand": "MainStays",
+         "price": "$199",
+         "quantity": 5,
+         "SKU": "CR-34068" ,
+         "location": "aisle 1",
+         "description": "Microsuede Rocker Recliner"
+      },{
+         "department": "furniture",
+         "category": "bedroom",
+         "type": "bed",
+         "brand": "South Shore",
+         "price": "$153",
+         "quantity": 1,
+         "SKU": "BD-94857" ,
+         "location": "aisle 2",
+         "description": "Queen Platform Bed with 60 inch moulding"
+      },{
+         "department": "furniture",
+         "category": "bedroom",
+         "type": "bed",
+         "brand": "MainStays",
+         "price": "$99",
+         "quantity": 2,
+         "SKU": "BD-84950" ,
+         "location": "aisle 2",
+         "description": "Twin Platform Bed and Headboard, Multiple Finishes"
+      },{
+         "department": "furniture",
+         "category": "bedroom",
+         "type": "bed",
+         "brand": "Dakota",
+         "price": "$150",
+         "quantity": 3 ,
+         "SKU": "BD-39483" ,
+         "location": "aisle 2",
+         "description": "Faux Leather Upholstered Bed"
+      },{
+         "department": "furniture",
+         "category": "bedroom",
+         "type": "bed",
+         "brand": "South Shore",
+         "price": "$144",
+         "quantity": 4,
+         "SKU": "BD-34869" ,
+         "location": "aisle 2",
+         "description": "Full Platform Bed with Molding"
+      },{
+         "department": "furniture",
+         "category": "bedroom",
+         "type": "bed",
+         "brand": "Dorel",
+         "price": "$205",
+         "quantity": 5,
+         "SKU": "BD-12943" ,
+         "location": "aisle 2",
+         "description": "Maddie Upholstered Linen Bed, Multiple Sizes and Colors"
+      },{
+         "department": "furniture",
+         "category": "dining room",
+         "type": "table",
+         "brand": "Better Homes and Gardens",
+         "price": "$136",
+         "quantity": 1,
+         "SKU": "DT-39403" ,
+         "location": "aisle 3",
+         "description": "Collin Dining Table, Wood Top with Distressed Metal Legs"
+      },{
+         "department": "furniture",
+         "category": "dining room",
+         "type": "table",
+         "brand": "Coaster",
+         "price": "$111",
+         "quantity": 2,
+         "SKU": "DT-30032" ,
+         "location": "aisle 3",
+         "description": "Company Clayton Dining Table"
+      },{
+         "department": "furniture",
+         "category": "dining room",
+         "type": "table",
+         "brand": "Lexington",
+         "price": "$141",
+         "quantity": 3,
+         "SKU": "DT-90242" ,
+         "location": "aisle 3",
+         "description": "Large Dining Table"
+      },{
+         "department": "furniture",
+         "category": "dining room",
+         "type": "table",
+         "brand": "Winsom",
+         "price": "$149",
+         "quantity": 4,
+         "SKU": "DT-92049" ,
+         "location": "aisle 3",
+         "description": "Tyler Table with Side Storage, Walnut"
+      },{
+         "department": "furniture",
+         "category": "dining room",
+         "type": "table",
+         "brand": "Arena",
+         "price": "$168",
+         "quantity": 5,
+         "SKU": "DT-34922" ,
+         "location": "aisle 3",
+         "description": "Burnt Wood Dining Table"
+      },{
+         "department": "furniture",
+         "category": "office",
+         "type": "desk",
+         "brand": "MainStays",
+         "price": "$89",
+         "quantity": 1,
+         "SKU": "OD-40294" ,
+         "location": "aisle 4",
+         "description": "L Shaped Desk with Hutch in Multiple Finishes"
+      },{
+         "department": "furniture",
+         "category": "office",
+         "type": "desk",
+         "brand": "Better Homes and Gardens",
+         "price": "$87.38",
+         "quantity": 2,
+         "SKU": "OD-65039" ,
+         "location": "aisle 4",
+         "description": "Cube Organizer Desk, Multiple Finishes"
+      },{
+         "department": "furniture",
+         "category": "office",
+         "type": "desk",
+         "brand": "Sauder Harbor",
+         "price": "$119",
+         "quantity": 3,
+         "SKU": "OD-56849" ,
+         "location": "aisle 4",
+         "description": "View Hutch in Salt Oak"
+      },{
+         "department": "furniture",
+         "category": "office",
+         "type": "desk",
+         "brand": "Furinno",
+         "price": "$29",
+         "quantity": 4,
+         "SKU": "OD-45240" ,
+         "location": "aisle 4",
+         "description": "Simplistic Easy Assembly Desk in Multiple Finishes"
+      },{
+         "department": "furniture",
+         "category": "office",
+         "type": "desk",
+         "brand": "South Shore",
+         "price": "$116.72",
+         "quantity": 5,
+         "SKU": "OD-78394" ,
+         "location": "aisle 4",
+         "description": "Smart Basics Small Desk in Multiple Finishes"
+      }
+]
+}

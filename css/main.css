@@ -37,13 +37,6 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
 #playground-container {
   height: 500px;
   overflow: hidden !important;
@@ -142,6 +135,18 @@ span.input-group-addon i {
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px; }
+
+.circle {
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: gray; }
+
+.count {
+  line-height: 100px;
+  color: white;
+  margin-left: 30px;
+  font-size: 25px; }
 
 /*
  * Global add-ons
