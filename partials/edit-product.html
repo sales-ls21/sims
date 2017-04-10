@@ -1,0 +1,63 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SIMS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="/dashboard">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/add-new-product">Add a New Product</a></li>
+            <li><a ng-click="logout()">Log Out</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+          <h1 class="page-header">Admin Dashboard - Edit Product Detail</h1>
+          <h4>Enter the corrections below. If any information is to remain the same, please re-enter it. Otherwise, the information will be deleted from the system. When finished, hit "Save Edits" to store changes. </h4>
+          <form>
+			  <div class="form-group" ng-repeat="product in products">
+			  	<label for="SKU">SKU</label>
+			    <input type="text" class="form-control" id="SKU" placeholder="{{product.SKU}}"ng-model="editedProduct.SKU">
+			
+			    <label for="brand">Product Brand</label>
+			    <input type="text" class="form-control" id="brand" placeholder="{{product.brand}}" ng-model="editedProduct.brand">
+			 
+			 	<label for="department">Product Department</label>
+			    <input type="text" class="form-control" id="department" placeholder="{{product.department}}" ng-model="editedProduct.department">
+			 
+			 	<label for="category">Product Category</label>
+			    <input type="text" class="form-control" id="category" placeholder="{{product.category}}" ng-model="editedProduct.category">
+			
+			   <label for="type">Product Type</label>
+          <input type="text" class="form-control" id="type" placeholder="{{product.type}}" ng-model="editedProduct.type">
+        <label for="price">Product Price</label>
+          <input type="text" class="form-control" id="price" placeholder="{{product.price}}" ng-model="editedProduct.price">
+       <label for="quantity">Quantity</label>
+          <input type="text" class="form-control" id="quantity" placeholder="{{product.quantity}}" ng-model="editedProduct.quantity">
+       <label for="location">In-Store Location</label>
+          <input type="text" class="form-control" id="location" placeholder="{{product.location}}" ng-model="editedProduct.location">
+       <label for="description">Product Description</label>
+			    <input type="text" class="form-control" id="description" placeholder="{{product.description}}" ng-model="editedProduct.description">
+			 	<button class="btn btn-info" ng-click="saveEdits()"> Save Edits</button>
+			</form>

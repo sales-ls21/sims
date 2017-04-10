@@ -1,0 +1,52 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SIMS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/add-new-product">Add a New Product</a></li>
+            <li><a ng-click="logout()">Log Out</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-4 col-md-10 col-md-offset-4" ng-repeat="product in products">
+          <h1 class="page-header">Product Details for {{product.SKU}} </h1>
+          <h3>Brand: {{product.brand}}</h3>
+          <h3>Department: {{product.department}}</h3>
+          <h3>Category: {{product.category}}</h3>
+          <h3>Type: {{product.type}}</h3>
+          <h3>Quantity Available: {{product.quantity}}</h3>
+          <h3>Price per Unit: {{product.price}}</h3>
+          <h3>In-Store Location: {{product.location}}</h3>
+          <h3>Description: {{product.description}}</h3>
+          <h3>Date Entered Inventory: {{product.date_created}}</h3>
+          <h3>Entered By: {{product.created_by}}</h3>
+          <a class="btn btn-info" href="/edit-product/{{product.SKU}}"> Edit</a>
+      </div>
+    </div>
+
+      

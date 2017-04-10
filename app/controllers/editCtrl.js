@@ -25,6 +25,7 @@ app.controller("editCtrl", function(authFactory, $routeParams, $location, $scope
 		.then((obj)=>{
 			$location.url("/users");
 			$scope.$apply();
+			toastr.success("User successfully updated!");
 		});
 	};
 
