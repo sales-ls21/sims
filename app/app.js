@@ -49,6 +49,10 @@ app.config(function($routeProvider){
 		templateUrl: "partials/edit-user.html",
 		controller: "editCtrl"
 	})
+	.when("/edit-product/:SKU", {
+		templateUrl: "partials/edit-product.html",
+		controller: "editProductCtrl"
+	})
 	.otherwise("/");
 
 }).config(function($locationProvider){
