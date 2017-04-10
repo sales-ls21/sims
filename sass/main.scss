@@ -40,14 +40,7 @@ body {
 }
 
 // STYLES FOR REGISTRATION
-
-/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
+ // * General styles
 #playground-container {
     height: 500px;
     overflow: hidden !important;
@@ -163,8 +156,18 @@ span.input-group-addon i {
 body {
   padding-top: 50px;
 }
-
-
+.circle{
+  border-radius: 50px;
+  width:200px;
+  height: 200px;
+  background-color: gray;
+}
+.count{
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
 /*
  * Global add-ons
  */

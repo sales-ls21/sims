@@ -1,6 +1,23 @@
 "use strict";
 
-app.controller("dashboardCtrl", function($scope, $location, dataFactory){
+app.controller("dashboardCtrl", function($scope, $location, dataFactory, authFactory){
+
+	$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+	});
+
+	$scope.logout=()=>{
+		authFactory.logoutUser();
+		$location.url("/");
+	};
 
 	$scope.categories = [];
 	$scope.finalCategories = [];
