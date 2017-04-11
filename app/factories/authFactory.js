@@ -38,5 +38,29 @@ app.factory("authFactory", function($http, FBInfo) {
 		});
 	};
 
-	return {storeNewUser, createUser, logoutUser, loginUser, isAuthenticated, getUser};
+
+	let isAuth = function(){
+		return new Promise((resolve, reject) =>{
+			firebase.auth().onAuthStateChanged((user)=>{
+				if (user){
+					resolve(user.uid);
+				} else{
+					resolve(false);
+				}
+			});
+		});
+	};
+
+	let retrieveUserStatus = (id)=>{
+		return new Promise((resolve, reject)=>{
+			$http.get(`${FBInfo.databaseURL}/users.json?orderBy="uid"&equalTo="${id}"`)
+			.then((obj)=>{
+				resolve(obj.data);
+			}).catch((error)=>{
+				reject(error);
+			});
+		});
+	};
+
+	return {retrieveUserStatus, isAuth, storeNewUser, createUser, logoutUser, loginUser, isAuthenticated, getUser};
 });
